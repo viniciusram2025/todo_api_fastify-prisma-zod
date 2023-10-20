@@ -1,0 +1,1 @@
+export const API_SECRET = "UHJvamV0byBUb2RvIHBhcmEgbWV1IHBvcnRpZm9saW8gcGVzc29hbA=="
