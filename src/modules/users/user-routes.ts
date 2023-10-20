@@ -1,5 +1,10 @@
 import { FastifyInstance } from 'fastify';
-import { deleteUserHandler, loginHandler, registerUserHandler, updateUserHandler } from './user-controllers';
+import { 
+    deleteUserHandler, 
+    loginHandler, 
+    registerUserHandler, 
+    updateUserHandler 
+} from './user-controllers';
 import { 
     serializerCompiler, 
     validatorCompiler, 

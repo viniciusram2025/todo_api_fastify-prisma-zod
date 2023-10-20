@@ -1,9 +1,9 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import { CreateUserInput, LoginInput, UpdateUserSchema } from "./user-schema";
-import { createUser, deleteUser, findUserByEmail, findUserById, updateUser } from "./user-service";
+import { createUser, deleteUser, findUserByEmail, updateUser } from "./user-service";
 import { comparePassword, encryptedPassword } from "../../utils/hash-password";
 import { API_SECRET } from "../../config/secrets";
-import { BAD_REQUEST, CREATE_SUCCESS, INTERNAL_SERVER_ERROR, NOT_FOUND, SUCCESS, UNAUTHORIZED } from "../../config/httpStatus";
+import { BAD_REQUEST, NOT_FOUND, SUCCESS, UNAUTHORIZED } from "../../config/httpStatus";
 import jwt from 'jsonwebtoken';
 
 export async function registerUserHandler(

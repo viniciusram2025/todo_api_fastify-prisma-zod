@@ -104,7 +104,7 @@ export async function deletePostByIdHandler(
 }
 
 
-export async function getAllPostsHandler(reply: FastifyReply) {
+export async function getAllPostsHandler(request: FastifyRequest, reply: FastifyReply) {
   try {
     const posts = await getPosts();
     return posts;
